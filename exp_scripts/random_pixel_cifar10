@@ -1,0 +1,3 @@
+#!/bin/bash
+python create_mask.py --dataset cifar10 --mask-type random \
+    --n-repeats 10 --random-change-iter 48

@@ -1,0 +1,6 @@
+#!/bin/bash
+python create_mask.py --dataset galaxy10 --mask-type static \
+    --n-repeats 10 --lambda-init 1 \
+    --lr 0.001 --lambda-factor 1.5 \
+    --use-warmup-net 1 --n-epochs 300 --lambda-patience 2 \
+    --input-drop-upscaling False

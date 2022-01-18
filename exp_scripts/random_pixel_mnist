@@ -1,0 +1,3 @@
+#!/bin/bash
+python create_mask.py --dataset mnist --mask-type random \
+    --input-drop-upscaling False --n-repeats 10 --random-change-iter 245

@@ -1,0 +1,6 @@
+#!/bin/bash
+python create_mask.py --dataset mnist --mask-type dynamic \
+    --dynamic-mask linear --n-repeats 10 --lambda-init 0.0005 \
+    --lr 0.0005 --lambda-factor 1.5 \
+    --use-warmup-net 1 --n-epochs 400 --lambda-patience 5 \
+    --input-drop-upscaling False

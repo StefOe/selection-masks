@@ -1,0 +1,6 @@
+#!/bin/bash
+python create_mask.py --dataset svhn --mask-type static \
+    --n-repeats 10 --lambda-init 1 \
+    --lr 0.0001 --lambda-factor 1.25 \
+    --quality-levels 90 70 50 30 10 --any-init-mean 0.5\
+    --use-warmup-net 1 --n-epochs 300 --lambda-patience 10

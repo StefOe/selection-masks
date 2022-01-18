@@ -1,0 +1,9 @@
+#!/bin/bash
+python create_mask.py --dataset ships --mask-type dynamic \
+    --dynamic-mask convatt --n-repeats 10 \
+    --lambda-init 0.025 --lr 0.0005 \
+    --lambda-factor 1.15 --use-warmup-net 1 \
+    --n-epochs 400 --lambda-patience 9 \
+    --input-drop-upscaling False \
+    --any-granularity subCXLIVdrant --dynamic-h 12 --dynamic-w 12 \
+    --batch-size 256

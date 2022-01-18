@@ -1,0 +1,6 @@
+#!/bin/bash
+python create_mask.py --dataset cifar10 --mask-type dynamic \
+    --dynamic-mask convatt --n-repeats 10 --lambda-init 0.1 \
+    --lr 0.001 --lambda-factor 1.15 \
+    --use-warmup-net 1 --n-epochs 300 --lambda-patience 10 \
+    --input-drop-upscaling False
