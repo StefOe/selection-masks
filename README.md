@@ -1,5 +1,6 @@
 # Input Selection for Bandwidth-Limited Neural Network Inference
 This repository contains the code to reproduce the results from the paper accepted at SIAM International Conference on Data Mining (SDM22).
+The arxiv version can be found here: https://arxiv.org/abs/1906.04673
 
 The starting script is ``create_mask.py``. 
 An overview over the parameters can be obtained with ``python create_mask.py --help``.
